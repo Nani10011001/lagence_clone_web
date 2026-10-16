@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Section2 = () => {
   return (
-    <section className='h-screen bg-surface'>
+    <section className='h-screen relative z-10 bg-surface'>
       
     </section>
   )
