@@ -19,7 +19,7 @@ observer.observe(whiteSection)
 return ()=> observer.disconnect()
   },[])
   return (
-    <header className="hidden md:block lg:block w-full fixed z-55 px-11 py-3 ">
+    <header className=" w-full fixed z-55 px-11 py-3 ">
       <nav className={`flex  items-center justify-between`}>
         <img src={logo} alt="company logo" className={`
             w-[100px] md:w-[170px] ${isDark? "text-black":" invert brightness-0"}`}  />
