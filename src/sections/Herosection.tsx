@@ -1,5 +1,20 @@
+import type { Variants } from "framer-motion"
+import {motion} from "framer-motion"
 import frontsection from "../assets/frontImage.png"
-
+const h1Animate:Variants = {
+  offscreen:{
+    y:150,
+    
+  },
+  onscreen: {
+y:0,
+transition:{
+  duration:2,
+  delay:0.4,
+  ease:[0.76,0,0.24,1]
+}
+  }
+}
 const Herosection = () => {
   return (
     <section className="bg-cover sticky z-0 top-0 w-full bg-no-repeat  bg-center   before:absolute before:inset-0 before:bg-[#222222] before:opacity-20  h-screen" 
@@ -8,13 +23,17 @@ const Herosection = () => {
    <div className="w-full  py-62  relative   md:py-20 lg:py-20 h-screen flex flex-col  md:gap-4  items-center">
   <div className="flex flex-col gap-4">
       <p className="uppercase  text-center font-lexend text-surface text-xs tracking-[-0.02rem]">BRAND IMAGE AND WEB DESIGN</p>
-    <h1 className="font-playfair px-4 text-center max-w-[50rem] md:max-w-[60rem] lg:max-w-[60rem] tracking-[-0.05em] text-surface text-3xl  md:text-6xl lg:text-6xl">
+    <motion.h1 
+    variants={h1Animate}
+    initial="offscreen"
+    whileInView="onscreen"
+    className="font-playfair px-4 text-center max-w-[50rem] md:max-w-[60rem] lg:max-w-[60rem] tracking-[-0.05em] text-surface text-3xl  md:text-6xl lg:text-6xl">
       
     We create websites for{" "}
   <em>beauty</em>, <em>wellness</em>, <em>food</em> and{" "}
   <em>lifestyle</em> brands that work for you.
   
-   </h1>
+   </motion.h1>
   </div>
   <div>
     <p className=" text-surface my-3 md:text-2xl 

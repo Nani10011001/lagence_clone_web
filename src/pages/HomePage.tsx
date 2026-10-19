@@ -5,6 +5,8 @@ import Pagereveal from "../sections/Pagereveal"
 import Section3 from "../sections/Section3"
 import { useScroll, useTransform } from "framer-motion"
 import Section4 from "../sections/Section4"
+import Section5 from "../sections/Section5"
+import Section6 from "../sections/Section6"
 const HomePage = () => {
   const { scrollY } = useScroll()
   const heroProgress = useTransform(scrollY, [0, window.innerHeight], [0, 1])
@@ -22,6 +24,8 @@ const HomePage = () => {
         <Section3 />
       </section>
       <Section4/>
+      <Section5/>
+      <Section6/>
     </div>
   )
 }
