@@ -15,7 +15,7 @@ const Section3 = () => {
         
     )
     const clip = useTransform(scrollYProgress,[0,1], ["inset(0 0 0 100%)", "inset(0 0 0 0%)"])
-    const clipTop = useTransform(scrollYProgress,[0,1],["inset(0 0 100%,0","inset(0 0 0% 0"])
+    const clipTop = useTransform(scrollYProgress,[0,1],["inset(0 0 100% 0)","inset(0 0 0% 0)"])
   return (
     <div ref={container} className='md:h-[150vh] h-[200vh]  px-4 md:px-34 lg:px:34 bg-surface relative'>
       <div className="grid grid-col-1 md:grid-cols-2 gap-14 lg:grid-cols-2">

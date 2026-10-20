@@ -7,6 +7,7 @@ import { useScroll, useTransform } from "framer-motion"
 import Section4 from "../sections/Section4"
 import Section5 from "../sections/Section5"
 import Section6 from "../sections/Section6"
+import Section7 from "../sections/Section7"
 const HomePage = () => {
   const { scrollY } = useScroll()
   const heroProgress = useTransform(scrollY, [0, window.innerHeight], [0, 1])
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Section4/>
       <Section5/>
       <Section6/>
+      <Section7/>
     </div>
   )
 }
