@@ -41,7 +41,7 @@ const Section6 = () => {
     })
     const clip = useTransform(scrollYProgress,[0,1],["inset(0 0 0 100% ) ","inset(0 0 0 0%"])
   return (
-    <section ref={container} className="bg-surface h-[150vh] w-full py-6 px-4 md:px-11 md:relative">
+    <section ref={container} className="bg-surface min-h-[150vh] w-full py-6 px-4 md:px-11 md:relative">
       <div className="w-full flex flex-col gap-1 md:gap-2">
         <p className="uppercase text-sm  md:text-sm lg:text-sm">Our offers</p>
 <p className="font-playfair text-2xl leading-6 md:leading-none md:text-5xl md:max-w-[680px]">No default offer.<br/>
@@ -69,7 +69,7 @@ An offer tailored to <em> your needs .</em></p>
           }
      
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10 md:mt-0">
         <a href="" className="uppercase text-[#A43032] underline text-sm md:text-md font-lexend mt-8 scale-y-90">Discover the offers →</a>
       </div>
     </section>
