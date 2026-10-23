@@ -9,6 +9,8 @@ import Section5 from "../sections/Section5"
 import Section6 from "../sections/Section6"
 import Section7 from "../sections/Section7"
 import Section8 from "../sections/Section8"
+import Section9 from "../sections/Section9"
+import Section10 from "../sections/Section10"
 const HomePage = () => {
   const { scrollY } = useScroll()
   const heroProgress = useTransform(scrollY, [0, window.innerHeight], [0, 1])
@@ -32,6 +34,8 @@ const HomePage = () => {
         <Section7/>
     </section>
     <Section8/>
+    <Section9/>
+    <Section10/>
     </div>
   )
 }
