@@ -28,10 +28,10 @@ style={{
 }}
 alt="" className="object-cover max-w-full h-auto" />
 </div>
-<div className="flex relative flex-col my-[-10px]">
+<div className="flex relative flex-col gap-14 md:gap-2 md:my-[-10px]">
 <motion.img src={Grils_makeup} style={{
-    clipPath:clipTop
-}} className="relative object-cover ml-10 max-w-full h-auto  hidden md:block" alt="" />
+    clipPath:clip
+}} className="relative object-cover  md:ml-10 w-full h-auto   " alt="" />
 <motion.img style={{
     clipPath:clip
 }} src={Makup_color} className=" lg:mr-14 max-w-full h-auto" alt="" />

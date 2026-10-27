@@ -25,3 +25,6 @@
   --color-content-secondary: #333333;
   --color-content-muted: #515151;
 }
+html,body{
+  overflow-x: hidden;
+}

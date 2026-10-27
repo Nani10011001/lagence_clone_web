@@ -17,7 +17,7 @@ transition:{
 }
 const Herosection = () => {
   return (
-    <section className="bg-cover md:sticky lg:sticky  md:z-0 md:top-0 w-full bg-no-repeat  bg-center   before:absolute before:inset-0 before:bg-[#222222] before:opacity-20  h-screen" 
+    <section className="bg-cover md:sticky lg:sticky  md:z-0 md:top-0 w-full bg-no-repeat  bg-center   before:absolute before:inset-0 before:bg-[#222222] before:h-screen before:opacity-20  h-screen" 
     style={{backgroundImage:`url(${frontsection})`}}>
      
    <div className="w-full  py-62  md:relative   md:py-20 lg:py-20 h-screen flex flex-col  md:gap-4  items-center">
